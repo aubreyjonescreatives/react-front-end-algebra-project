@@ -1,7 +1,7 @@
 import React, { Fragment} from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import QuizQuestions from './QuizQuestions'
+import App from './App'
 
 
 function Index() {
@@ -9,8 +9,7 @@ function Index() {
 return (
 <Fragment>
 
-
-<QuizQuestions/>
+<App />
 
 </Fragment>
 

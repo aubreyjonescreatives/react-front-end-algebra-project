@@ -1,55 +1,149 @@
-import React from 'react'
-import quizinfoData from './data/quizquestions.json'
-import quizzesStyles from './css/quizzesStyles.css'
-//import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-//import {faUser, faBook, faFile, faSquare, faTrophy} from '@fortawesome/free-solid-svg-icons'
-import {AccountCircle, Dashboard, LibraryBooks, Extension, HourglassFull, Grade} from '@material-ui/icons'
-//import Icon from '@material-ui/core/icon'
-import {Avatar, Link} from '@material-ui/core'
-import smallflcincicon from './assets/images/smallflcincicon.png'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import * as React from 'react';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import Drawer from '@mui/material/Drawer';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem'; 
+import ListItemIcon from '@mui/material/ListItemIcon'; 
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
+import ExtensionIcon from '@mui/icons-material/Extension';
+import HourglassFullIcon from '@mui/icons-material/HourglassFull';
+import GradeIcon from '@mui/icons-material/Grade';
+import LogoutIcon from '@mui/icons-material/Logout';
+
+
+
+import {Link} from '@material-ui/core'
+import smallflcincicon from '../assets/images/smallflcincicon.png'
 
 
 
                                       
-function SideNavigation() {
+const SideNavigation = () => {
+
+
+
+    const [isOpen, setIsOpen] = React.useState(false)
+
+    const toggleDrawer = () => {
+      setIsOpen(!isOpen)
+    }
+
+
+    const drawerItemList = () => (
+        <Box sx={{width: 250, backgroundColor: '#5FAD56'}} role="presentation" className="drawerMenu">
+          <List>
+          <ListItem button>
+              <ListItemIcon sx={{color: "white"}}>
+              <AccountCircleIcon src={smallflcincicon}>Algebra for Home</AccountCircleIcon>
+              </ListItemIcon>
+              <Link href="/">Algebra for Home</Link>
+            </ListItem>
+           
+            <ListItem button>
+              <ListItemIcon sx={{color: "white"}}>
+                <AccountCircleIcon/>
+              </ListItemIcon>
+              <Link href="/" >Account</Link>
+            </ListItem>
+       
+         
+            <ListItem button>
+              <ListItemIcon sx={{color: "white"}}>
+                <DashboardIcon/>
+              </ListItemIcon>
+              <Link href="/">Dashboard</Link>
+            </ListItem>
+
+            <ListItem button>
+              <ListItemIcon sx={{color: "white"}}>
+                <LibraryBooksIcon/>
+              </ListItemIcon>
+              <Link href="/">Lessons</Link>
+            </ListItem>
+
+            <ListItem button>
+              <ListItemIcon sx={{color: "white"}}>
+                <ExtensionIcon/>
+              </ListItemIcon>
+              <Link href="/">Practices</Link>
+            </ListItem>
+
+            <ListItem button>
+              <ListItemIcon sx={{color: "white"}}>
+                <HourglassFullIcon/>
+              </ListItemIcon>
+              <Link href="/">Quizzes</Link>
+            </ListItem>
+
+            <ListItem button>
+              <ListItemIcon sx={{color: "white"}}>
+                <GradeIcon/>
+              </ListItemIcon>
+              <Link href="/">Awards</Link>
+            </ListItem>
+       
+       
+           <ListItem button  >
+           <ListItemIcon sx={{color: "white"}}>
+             <LogoutIcon/>
+           </ListItemIcon>
+           <Link href="/">Logout</Link>
+         </ListItem>
+                  
+                
+          
+          </List>
+        </Box>
+      )
+
+
+
 
 
 
 return (
-<html>
-<header>
+<>
+
+<Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+            onClick={toggleDrawer}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            Algebra for Home
+          </Typography>
+          <Button color="inherit">Login</Button>
+        </Toolbar>
+      </AppBar>
+    </Box>
+
+    <Drawer anchor="left" open={isOpen} onClose={toggleDrawer} sx={{backgroundColor: '57FAD56'}}>
+      {drawerItemList()}
+      </Drawer>
 
 
-</header>
-
-
-<main>
-
-
-<nav>
-                                                                                                                                                                                                                                                                                                                                                                                                                          
-<li><a href="#about"><p><Avatar src={smallflcincicon} className="flcincicon"/></p><p>FLC INC</p></a></li> 
-<li><a href="#about"><p><AccountCircle></AccountCircle></p><p>ACCOUNT</p></a></li> 
-<li><a href="#about"><p><Dashboard></Dashboard></p><p>DASHBOARD</p></a></li> 
-<li><a href="Algebra1Lessons.js"><p><LibraryBooks></LibraryBooks></p><p>LESSONS</p></a></li> 
-<li><a href="#about"><p><Extension></Extension></p><p>PRACTICES</p></a></li> 
-<li><a href="QuizQuestions.js"><p><HourglassFull></HourglassFull></p><p>QUIZZES</p></a></li> 
-<li><a href="#about"><p><Grade></Grade></p><p>AWARDS</p></a></li> 
-
-
-</nav>
 
 
 
 
-</main>
 
-
-
-</html>
-
-
+</>
 
 )
 
