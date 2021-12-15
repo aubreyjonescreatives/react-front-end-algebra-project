@@ -1,0 +1,152 @@
+
+
+/* ------------------------HEADER----------------------------- */
+
+
+
+
+/*-------------------- MAIN ------------------------------ */
+
+
+main {
+ 
+.topnav {
+
+    .topnav-center {
+        font-size: 28px; 
+        }
+
+
+
+    .topnav-right {
+        left: 90%;    
+    
+    }
+
+}
+//div.lead { grid-row: 1 / span 2; grid-column: 1} 
+//div.secondTop { grid-row: 1; grid-column: 2; align-self: start;}      
+//div.secondBot { grid-row: 2; grid-column: 2; align-self:end;}  
+    
+    
+    
+  
+.questionInfo {
+
+
+    
+    h1 {
+    text-align: left; 
+    padding: 20px 20px; 
+    font-size: 24px; 
+    
+    }
+    
+    
+    h2 {
+    text-align: left; 
+    padding: 20px 20px; 
+    font-size: 24px; 
+    
+    
+    
+    }
+    
+    
+    p {
+    font-size: 18px; 
+    text-align: center;  
+    padding: 20px 20px; 
+    }
+    
+    
+    .allButtons {
+    margin: 20px 5%;  
+    
+    
+    .theChoices {
+        width: 20%; 
+        margin: 10px 20px; 
+        float: left; 
+        padding: 10px 10px; 
+        background-color: $primaryColor; 
+        border: none; 
+        color: $thirdColor; 
+       
+        
+        
+        }
+    
+    
+    
+    }
+    
+    }
+    
+        
+        
+      
+    
+    
+
+/*----------------Column Layout -------------*/
+
+
+
+//@for $i from 1 through 12 {
+//    $w: ($i / 12) * 100%;
+//    .medium-#{$i} {width: $w; float: left;}
+    
+//}
+
+    
+    
+    
+    
+  
+    
+  
+    
+}
+
+
+
+
+/*----------------FOOTER--------------------
+
+
+footer {
+    grid-template-columns: 1fr 1fr;
+    
+  
+    
+ p {
+     text-align: center;   
+     grid-column: 1 / span 2;  
+    }
+         
+    
+    
+   
+div.apple { grid-row: 1; grid-column: 1; align-self: start; } 
+div.pear { grid-row: 1; grid-column: 2;}     
+div.banana { grid-row: 2; grid-column: 1; }  
+div.plum { grid-row: 2; grid-column: 2; }        
+    
+ 
+    
+}    
+
+
+
+div#wrapperFooter {
+    clear: both; 
+    background-color: $primaryColor;
+}
+
+
+
+
+
+    
+----------------END FOOTER--------------------*/
