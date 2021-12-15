@@ -17,7 +17,7 @@ import ExtensionIcon from '@mui/icons-material/Extension';
 import HourglassFullIcon from '@mui/icons-material/HourglassFull';
 import GradeIcon from '@mui/icons-material/Grade';
 import LogoutIcon from '@mui/icons-material/Logout';
-
+import Avatar from '@mui/material/Avatar';
 
 
 import {Link} from '@material-ui/core'
@@ -42,7 +42,7 @@ const TopNavigation = () => {
           <List>
           <ListItem button>
               <ListItemIcon sx={{color: "white"}}>
-              <AccountCircleIcon src={smallflcincicon}>Algebra for Home</AccountCircleIcon>
+              <Avatar alt="FLC INC" src={smallflcincicon} />
               </ListItemIcon>
               <Link href="/">Algebra for Home</Link>
             </ListItem>
@@ -132,6 +132,7 @@ return (
             Algebra for Home
           </Typography>
           <Button color="inherit">Login</Button>
+          <Button color="inherit">Sign Up</Button>
         </Toolbar>
       </AppBar>
     </Box>

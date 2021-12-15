@@ -21,6 +21,7 @@ const App = () => {
   <Route path="/Lessons" exact component={Lessons} />
   <Route path="/Practices" exact component={Practices} />
   <Route path="/Quizzes" exact component={Quizzes} />
+  <Route path="/Awards" exact component={Awards} />
   <Route path="/Settings" exact component={Settings} />
    
   </Router>
