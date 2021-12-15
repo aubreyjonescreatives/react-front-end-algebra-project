@@ -26,7 +26,7 @@ import smallflcincicon from '../assets/images/smallflcincicon.png'
 
 
                                       
-const SideNavigation = () => {
+const TopNavigation = () => {
 
 
 
@@ -47,12 +47,7 @@ const SideNavigation = () => {
               <Link href="/">Algebra for Home</Link>
             </ListItem>
            
-            <ListItem button>
-              <ListItemIcon sx={{color: "white"}}>
-                <AccountCircleIcon/>
-              </ListItemIcon>
-              <Link href="/" >Account</Link>
-            </ListItem>
+          
        
          
             <ListItem button>
@@ -88,6 +83,14 @@ const SideNavigation = () => {
                 <GradeIcon/>
               </ListItemIcon>
               <Link href="/">Awards</Link>
+            </ListItem>
+
+
+            <ListItem button>
+              <ListItemIcon sx={{color: "white"}}>
+                <AccountCircleIcon/>
+              </ListItemIcon>
+              <Link href="/" >Settings</Link>
             </ListItem>
        
        
@@ -151,4 +154,4 @@ return (
 
 }
 
-export default SideNavigation
+export default TopNavigation
