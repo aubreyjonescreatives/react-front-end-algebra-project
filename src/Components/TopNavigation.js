@@ -38,10 +38,10 @@ const TopNavigation = () => {
 
 
     const drawerItemList = () => (
-        <Box sx={{width: 250, backgroundColor: '#5FAD56'}} role="presentation" className="drawerMenu">
+        <Box sx={{width: 250, backgroundColor: 'white'}} role="presentation" className="drawerMenu">
           <List>
           <ListItem button>
-              <ListItemIcon sx={{color: "white"}}>
+              <ListItemIcon sx={{color: "#1B75BC"}}>
               <Avatar alt="FLC INC" src={smallflcincicon} />
               </ListItemIcon>
               <Link href="/">Algebra for Home</Link>
@@ -51,35 +51,35 @@ const TopNavigation = () => {
        
          
             <ListItem button>
-              <ListItemIcon sx={{color: "white"}}>
+              <ListItemIcon sx={{color: "#1B75BC"}}>
                 <DashboardIcon/>
               </ListItemIcon>
               <Link href="/">Dashboard</Link>
             </ListItem>
 
             <ListItem button>
-              <ListItemIcon sx={{color: "white"}}>
+              <ListItemIcon sx={{color: "#1B75BC"}}>
                 <LibraryBooksIcon/>
               </ListItemIcon>
               <Link href="/">Lessons</Link>
             </ListItem>
 
             <ListItem button>
-              <ListItemIcon sx={{color: "white"}}>
+              <ListItemIcon sx={{color: "#1B75BC"}}>
                 <ExtensionIcon/>
               </ListItemIcon>
               <Link href="/">Practices</Link>
             </ListItem>
 
             <ListItem button>
-              <ListItemIcon sx={{color: "white"}}>
+              <ListItemIcon sx={{color: "#1B75BC"}}>
                 <HourglassFullIcon/>
               </ListItemIcon>
               <Link href="/">Quizzes</Link>
             </ListItem>
 
             <ListItem button>
-              <ListItemIcon sx={{color: "white"}}>
+              <ListItemIcon sx={{color: "#1B75BC"}}>
                 <GradeIcon/>
               </ListItemIcon>
               <Link href="/">Awards</Link>
@@ -87,7 +87,7 @@ const TopNavigation = () => {
 
 
             <ListItem button>
-              <ListItemIcon sx={{color: "white"}}>
+              <ListItemIcon sx={{color: "#1B75BC"}}>
                 <AccountCircleIcon/>
               </ListItemIcon>
               <Link href="/" >Settings</Link>
@@ -95,7 +95,7 @@ const TopNavigation = () => {
        
        
            <ListItem button  >
-           <ListItemIcon sx={{color: "white"}}>
+           <ListItemIcon sx={{color: "#1B75BC"}}>
              <LogoutIcon/>
            </ListItemIcon>
            <Link href="/">Logout</Link>
@@ -116,23 +116,22 @@ return (
 <>
 
 <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" sx={{backgroundColor: 'white'}}>
         <Toolbar>
           <IconButton
             size="large"
             edge="start"
-            color="inherit"
             aria-label="menu"
-            sx={{ mr: 2 }}
+            sx={{ mr: 2, color: "#1B75BC" }}
             onClick={toggleDrawer}
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1, color: "#1B75BC" }}>
             Algebra for Home
           </Typography>
-          <Button color="inherit">Login</Button>
-          <Button color="inherit">Sign Up</Button>
+          <Button sx={{color: "#1B75BC"}}>Login</Button>
+          <Button sx={{color: "#1B75BC"}}>Sign Up</Button>
         </Toolbar>
       </AppBar>
     </Box>
