@@ -54,35 +54,35 @@ const TopNavigation = () => {
               <ListItemIcon sx={{color: "#1B75BC"}}>
                 <DashboardIcon/>
               </ListItemIcon>
-              <Link href="/">Dashboard</Link>
+              <Link href="/Dashboard">Dashboard</Link>
             </ListItem>
 
             <ListItem button>
               <ListItemIcon sx={{color: "#1B75BC"}}>
                 <LibraryBooksIcon/>
               </ListItemIcon>
-              <Link href="/">Lessons</Link>
+              <Link href="/Lessons">Lessons</Link>
             </ListItem>
 
             <ListItem button>
               <ListItemIcon sx={{color: "#1B75BC"}}>
                 <ExtensionIcon/>
               </ListItemIcon>
-              <Link href="/">Practices</Link>
+              <Link href="/Practices">Practices</Link>
             </ListItem>
 
             <ListItem button>
               <ListItemIcon sx={{color: "#1B75BC"}}>
                 <HourglassFullIcon/>
               </ListItemIcon>
-              <Link href="/">Quizzes</Link>
+              <Link href="/Quizzes">Quizzes</Link>
             </ListItem>
 
             <ListItem button>
               <ListItemIcon sx={{color: "#1B75BC"}}>
                 <GradeIcon/>
               </ListItemIcon>
-              <Link href="/">Awards</Link>
+              <Link href="/Awards">Awards</Link>
             </ListItem>
 
 
@@ -90,7 +90,7 @@ const TopNavigation = () => {
               <ListItemIcon sx={{color: "#1B75BC"}}>
                 <AccountCircleIcon/>
               </ListItemIcon>
-              <Link href="/" >Settings</Link>
+              <Link href="/Settings" >Settings</Link>
             </ListItem>
        
        
