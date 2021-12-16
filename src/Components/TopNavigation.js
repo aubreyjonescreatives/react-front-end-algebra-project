@@ -130,8 +130,8 @@ return (
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, color: "#1B75BC" }}>
             Algebra for Home
           </Typography>
-          <Button sx={{color: "#1B75BC"}}>Login</Button>
-          <Button sx={{color: "#1B75BC"}}>Sign Up</Button>
+          <Link href="/LoginForm" sx={{color: "#1B75BC"}}>Login</Link>
+          <Link href="/SignUpForm" sx={{color: "#1B75BC"}}>Sign Up</Link>
         </Toolbar>
       </AppBar>
     </Box>
