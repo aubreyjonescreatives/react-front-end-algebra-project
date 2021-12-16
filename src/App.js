@@ -14,6 +14,7 @@ import Practices from './Pages/Practices'
 import Quizzes from './Pages/Quizzes'
 import Settings from './Pages/Settings'
 import LoginForm from './Components/Login/LoginForm'; 
+import SignUpForm from './Components/Login/SignUpForm';
 import Welcome from './Components/Login/Welcome'; 
 
 const App = () => {
