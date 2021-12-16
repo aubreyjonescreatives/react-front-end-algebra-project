@@ -3,6 +3,18 @@ import {Formik} from 'formik'
 import * as Yup from 'yup'
 import { useHistory } from 'react-router-dom'
 import { useIdentityContext } from 'react-netlify-identity-gotrue'
+import Typography from '@mui/material/Typography';
+
+
+
+const typeStyle = {
+textAlign: 'center', 
+padding: '50px', 
+fontSize: '42px'
+
+
+}
+
 
 const style = {
     position: 'absolute', 
@@ -17,7 +29,7 @@ const style = {
   }
 
 
-const LoginForm = (props) => {
+const SignUpForm = (props) => {
 
 //const {closeHandler} = props
 
@@ -25,23 +37,33 @@ const identity = useIdentityContext()
 const history = useHistory()
 
 const handleClose = () => {
-  history.push('/Welcome')
+  history.push('/Confirm')
   console.log("Should close now...")
 
 }
 return (
+<>
+
+<Typography sx={typeStyle}>Sign Up Here</Typography>
 
     <Box sx={style}>
     <Formik 
     initialValues={{
-        username: "Aubrey Jones",
-        email: "example@example.com", 
+        name: 'Student Name', 
+        username: "student_user",
+        email: "student@student.com", 
         password: "Pass123", 
 
     }}
     validationSchema={
         Yup.object().shape({
-          email: Yup.string()
+          name: Yup.string()
+          .min(2)
+          .required('Name is required.'),
+          username: Yup.string()
+          .min(4)
+          .required('Username is required.'),
+            email: Yup.string()
             .email('Must be a valid email.')
             .max(255)
             .required('Email is required.'),
@@ -52,24 +74,23 @@ return (
         })}
     onSubmit={ async (value, {setErrors, setStatus, setSubmitting}) => {
     try {
-        console.log('Submit Successful!')
+       
         setStatus({success: true})
         setSubmitting(false)
-        await identity.login({
-          email: value.email, 
-          password: value.password
+        await identity.signup({
+          email: value.email, password: value.password, user_metadata: {
+            full_name: value.username
+          }
         }).then(() => {
-          console.log('Submit Successful!')
           handleClose()
+          console.log('Submit Successful!')
         })
     } catch (err) {
         console.error(err)
         setStatus({success: false})
         setErrors({ submit: err.message })
         setSubmitting(false)
-    } finally {
-        handleClose()
-    }
+    } 
     }}
     >
     {({errors, 
@@ -81,6 +102,34 @@ return (
         touched,
         }) => (
 <form noValidate onSubmit={handleSubmit}>
+<TextField
+  error={Boolean(touched.name && errors.name)}
+  fullWidth
+  helperText={touched.name && errors.name}
+  label="Name"
+  margin="normal" 
+  name="name"
+  type="text"
+  variant="outlined"
+  onBlur={handleBlur}
+  onChange={handleChange}
+  value={values.name}
+  
+  />
+  <TextField
+  error={Boolean(touched.username && errors.username)}
+  fullWidth
+  helperText={touched.username && errors.username}
+  label="Username"
+  margin="normal" 
+  name="username"
+  type="text"
+  variant="outlined"
+  onBlur={handleBlur}
+  onChange={handleChange}
+  value={values.username}
+  
+  />
   <TextField
   error={Boolean(touched.email && errors.email)}
   fullWidth
@@ -126,12 +175,12 @@ return (
   bgcolor="primary"
   disabled={isSubmitting}
   type="submit"
-  >Login</Button>
+  >Signup</Button>
   </form>
     )}
   </Formik>
   </Box>
-
+  </>
 
 )
 
@@ -140,4 +189,4 @@ return (
 
 }
 
-export default LoginForm; 
+export default SignUpForm; 
