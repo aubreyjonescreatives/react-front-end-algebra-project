@@ -16,6 +16,7 @@ import Settings from './Pages/Settings'
 import LoginForm from './Components/Login/LoginForm'; 
 import SignUpForm from './Components/Login/SignUpForm';
 import Welcome from './Components/Login/Welcome'; 
+import Confirm from './Components/Login/Confirm'; 
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
   <Route path="/LoginForm" exact component={LoginForm} />
   <Route path="/SignUpForm" exact component={SignUpForm} />
   <Route path="/Welcome" exact component={Welcome} />
+  <Route path="/Confirm" exact component={Confirm} />
   </Switch>
   </Suspense>
   </NetlifyIdentityContext> 
