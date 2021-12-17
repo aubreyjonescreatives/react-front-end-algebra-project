@@ -56,7 +56,7 @@ const TopNavigation = () => {
               <ListItemIcon sx={{color: "#1B75BC"}}>
                 <DashboardIcon/>
               </ListItemIcon>
-              <Link href="/Dashboard">Dashboard</Link>
+              <Link href="/dashboard">Dashboard</Link>
             </ListItem>
 )}
   {identity.user && (
@@ -66,7 +66,7 @@ const TopNavigation = () => {
               <ListItemIcon sx={{color: "#1B75BC"}}>
                 <LibraryBooksIcon/>
               </ListItemIcon>
-              <Link href="/Lessons">Lessons</Link>
+              <Link href="/lessons">Lessons</Link>
             </ListItem>
 )}
 {identity.user && (
@@ -76,7 +76,7 @@ const TopNavigation = () => {
               <ListItemIcon sx={{color: "#1B75BC"}}>
                 <ExtensionIcon/>
               </ListItemIcon>
-              <Link href="/Practices">Practices</Link>
+              <Link href="/practices">Practices</Link>
             </ListItem>
 )}
 {identity.user && (
@@ -86,7 +86,7 @@ const TopNavigation = () => {
               <ListItemIcon sx={{color: "#1B75BC"}}>
                 <HourglassFullIcon/>
               </ListItemIcon>
-              <Link href="/Quizzes">Quizzes</Link>
+              <Link href="/quizzes">Quizzes</Link>
             </ListItem>
 )}
 {identity.user && (
@@ -96,7 +96,7 @@ const TopNavigation = () => {
               <ListItemIcon sx={{color: "#1B75BC"}}>
                 <GradeIcon/>
               </ListItemIcon>
-              <Link href="/Awards">Awards</Link>
+              <Link href="/awards">Awards</Link>
             </ListItem>
 )}
 {identity.user && (
@@ -107,7 +107,7 @@ const TopNavigation = () => {
                  <ListItemIcon>
       <Avatar sx={{width: 30, height: 30, backgroundColor: '#1B75BC', color: "white"}}>{identity.user?.user_metadata?.full_name.slice(0, 1)}</Avatar>
         </ListItemIcon>
-              <Link href="/Profile" >{identity.user?.user_metadata?.full_name}'s Profile</Link>
+              <Link href="/profile" >{identity.user?.user_metadata?.full_name}'s Profile</Link>
             </ListItem>
        
 
