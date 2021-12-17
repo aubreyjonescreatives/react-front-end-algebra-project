@@ -156,17 +156,17 @@ return (
           </Typography>
           </Link>
           {!identity.user && (
-          <Link href="/SignUpForm" sx={{color: "#1B75BC"}}>Sign Up</Link>
+          <Link href="/signup" sx={{color: "#1B75BC"}}>Sign Up</Link>
           )}
             {!identity.user && (
-            <Link href="/LoginForm" sx={{color: "#1B75BC"}}>Login</Link> 
+            <Link href="/login" sx={{color: "#1B75BC"}}>Login</Link> 
           )}
           
          
           {identity.user && (
       <ListItem sx={{justifyContent: 'flex-end'}} button >
         <Typography>
-        <Link href='/Profile'>
+        <Link href='/profile'>
         <ListItemIcon>
       <Avatar sx={{width: 30, height: 30, backgroundColor: '#1B75BC', color: "white"}}>{identity.user?.user_metadata?.full_name.slice(0, 1)}</Avatar>
         </ListItemIcon>
