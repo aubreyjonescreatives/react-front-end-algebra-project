@@ -7,13 +7,13 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import {Link} from '@material-ui/core'
+
 
 
 const allCards = {
 display: 'flex', 
 flexWrap: 'wrap', 
-margin: '50px'
+
 
 }
 
@@ -31,9 +31,6 @@ const Lessons = () => {
     return (
      <>
     <Box sx={allCards}>
-
-
-    <Link href="/unitone">
     <Card sx={lessonCard}>
       <CardMedia
         component="img"
@@ -49,10 +46,6 @@ const Lessons = () => {
       </CardContent>
      
     </Card>
-    </Link>
-
-
-    <Link href="/unittwo">
     <Card sx={lessonCard}>
       <CardMedia
         component="img"
@@ -69,10 +62,6 @@ const Lessons = () => {
      
     </Card>
 
-    </Link>
-
-
- <Link href="/unitthree">
     <Card sx={lessonCard}>
       <CardMedia
         component="img"
@@ -89,10 +78,6 @@ const Lessons = () => {
      
     </Card>
 
-    </Link>
-
-
-    <Link href="/unitfour">
     <Card sx={lessonCard}>
       <CardMedia
         component="img"
@@ -108,11 +93,6 @@ const Lessons = () => {
       </CardContent>
      
     </Card>
-
-    </Link>
-
-
-<Link href="/unitfive">
 
     <Card sx={lessonCard}>
       <CardMedia
@@ -131,11 +111,6 @@ const Lessons = () => {
     </Card>
 
 
-    </Link>
-
-
-<Link href="/unitsix">
-
     <Card sx={lessonCard}>
       <CardMedia
         component="img"
@@ -153,11 +128,6 @@ const Lessons = () => {
     </Card>
 
 
-    </Link>
-
-
-<Link href="/unitseven">
-
     <Card sx={lessonCard}>
       <CardMedia
         component="img"
@@ -174,10 +144,6 @@ const Lessons = () => {
      
     </Card>
 
-    </Link>
-
-
-<Link href="/uniteight">
 
     <Card sx={lessonCard}>
       <CardMedia
@@ -194,11 +160,6 @@ const Lessons = () => {
       </CardContent>
      
     </Card>
-
-    </Link>
-
-
-<Link href="/unitnine">
 
 
     <Card sx={lessonCard}>
@@ -217,11 +178,6 @@ const Lessons = () => {
      
     </Card>
 
-    </Link>
-
-
-<Link href="/unitten">
-
 
     <Card sx={lessonCard}>
       <CardMedia
@@ -239,11 +195,6 @@ const Lessons = () => {
      
     </Card>
 
-    </Link>
-
-
-<Link href="/uniteleven">
-
     <Card sx={lessonCard}>
       <CardMedia
         component="img"
@@ -260,12 +211,6 @@ const Lessons = () => {
      
     </Card>
 
-
-    </Link>
-
-
-<Link href="/unittwelve">
-
     <Card sx={lessonCard}>
       <CardMedia
         component="img"
@@ -281,9 +226,6 @@ const Lessons = () => {
       </CardContent>
      
     </Card>
-
-
-    </Link>
 
     </Box>
      </>

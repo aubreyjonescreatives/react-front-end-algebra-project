@@ -17,6 +17,19 @@ import LoginForm from './Components/Login/LoginForm';
 import SignUpForm from './Components/Login/SignUpForm';
 import Welcome from './Components/Login/Welcome'; 
 import Confirm from './Components/Login/Confirm'; 
+import UnitOne from './Pages/LessonUnits/UnitOne.js'; 
+import UnitTwo from './Pages/LessonUnits/UnitTwo.js';
+import UnitThree from './Pages/LessonUnits/UnitThree.js';
+import UnitFour from './Pages/LessonUnits/UnitFour.js';
+import UnitFive from './Pages/LessonUnits/UnitFive.js';
+import UnitSix from './Pages/LessonUnits/UnitSix.js';
+import UnitSeven from './Pages/LessonUnits/UnitSeven.js';
+import UnitEight from './Pages/LessonUnits/UnitEight.js';
+import UnitNine from './Pages/LessonUnits/UnitNine.js';
+import UnitTen from './Pages/LessonUnits/UnitTen.js';
+import UnitEleven from './Pages/LessonUnits/UnitEleven.js';
+import UnitTwelve from './Pages/LessonUnits/UnitTwelve.js';
+
 
 const App = () => {
   return (
@@ -37,6 +50,18 @@ const App = () => {
   <Route path="/signup" exact component={SignUpForm} />
   <Route path="/welcome" exact component={Welcome} />
   <Route path="/confirm" exact component={Confirm} />
+  <Route path="/unitone" exact component={UnitOne} />
+  <Route path="/unittwo" exact component={UnitTwo} />
+  <Route path="/unitthree" exact component={UnitThree} />
+  <Route path="/unitfour" exact component={UnitFour} />
+  <Route path="/unitfive" exact component={UnitFive} />
+  <Route path="/unitsix" exact component={UnitSix} />
+  <Route path="/unitseven" exact component={UnitSeven} />
+  <Route path="/uniteight" exact component={UnitEight} />
+  <Route path="/unitnine" exact component={UnitNine} />
+  <Route path="/unitten" exact component={UnitTen} />
+  <Route path="/uniteleven" exact component={UnitEleven} />
+  <Route path="/unittwelve" exact component={UnitTwelve} />
   </Switch>
   </Suspense>
   </NetlifyIdentityContext> 
