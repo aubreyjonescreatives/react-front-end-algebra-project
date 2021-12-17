@@ -31,6 +31,8 @@ const Lessons = () => {
     return (
      <>
     <Box sx={allCards}>
+  
+  
     <Card sx={lessonCard}>
       <CardMedia
         component="img"
@@ -46,6 +48,8 @@ const Lessons = () => {
       </CardContent>
      
     </Card>
+  
+  
     <Card sx={lessonCard}>
       <CardMedia
         component="img"
