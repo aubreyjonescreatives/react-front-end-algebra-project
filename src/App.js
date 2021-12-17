@@ -12,7 +12,7 @@ import Landing from './Pages/Landing'
 import Lessons from './Pages/Lessons'
 import Practices from './Pages/Practices'
 import Quizzes from './Pages/Quizzes'
-import Settings from './Pages/Settings'
+import Profile from './Pages/Profile'
 import LoginForm from './Components/Login/LoginForm'; 
 import SignUpForm from './Components/Login/SignUpForm';
 import Welcome from './Components/Login/Welcome'; 
@@ -32,7 +32,7 @@ const App = () => {
   <Route path="/Practices" exact component={Practices} />
   <Route path="/Quizzes" exact component={Quizzes} />
   <Route path="/Awards" exact component={Awards} />
-  <Route path="/Settings" exact component={Settings} />
+  <Route path="/Profile" exact component={Profile} />
   <Route path="/LoginForm" exact component={LoginForm} />
   <Route path="/SignUpForm" exact component={SignUpForm} />
   <Route path="/Welcome" exact component={Welcome} />

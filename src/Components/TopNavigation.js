@@ -104,10 +104,10 @@ const TopNavigation = () => {
 
 
             <ListItem button>
-              <ListItemIcon sx={{color: "#1B75BC"}}>
-                <AccountCircleIcon/>
-              </ListItemIcon>
-              <Link href="/Settings" >Settings</Link>
+                 <ListItemIcon>
+      <Avatar sx={{width: 30, height: 30, backgroundColor: '#1B75BC', color: "white"}}>{identity.user?.user_metadata?.full_name.slice(0, 1)}</Avatar>
+        </ListItemIcon>
+              <Link href="/Profile" >{identity.user?.user_metadata?.full_name}'s Profile</Link>
             </ListItem>
        
 
@@ -166,7 +166,7 @@ return (
           {identity.user && (
       <ListItem sx={{justifyContent: 'flex-end'}} button >
         <Typography>
-        <Link href='/Welcome'>
+        <Link href='/Profile'>
         <ListItemIcon>
       <Avatar sx={{width: 30, height: 30, backgroundColor: '#1B75BC', color: "white"}}>{identity.user?.user_metadata?.full_name.slice(0, 1)}</Avatar>
         </ListItemIcon>

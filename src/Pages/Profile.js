@@ -5,17 +5,17 @@ import * as React from 'react';
 
 
 
-const Settings = () => {
+const Profile = () => {
    
     return (
      <>
     
      
-     Hello World. Welcome to the Settings Page.
+     Hello World. Welcome to the Profile Page.
      
      
      </>
     );
   }
   
-  export default Settings;
+  export default Profile;
