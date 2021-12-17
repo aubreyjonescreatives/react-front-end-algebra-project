@@ -27,16 +27,16 @@ const App = () => {
    <Suspense>
    <Switch>
    <Route path="/" exact component={Landing} />
-  <Route path="/Dashboard" exact component={Dashboard} />
-  <Route path="/Lessons" exact component={Lessons} />
-  <Route path="/Practices" exact component={Practices} />
-  <Route path="/Quizzes" exact component={Quizzes} />
-  <Route path="/Awards" exact component={Awards} />
-  <Route path="/Profile" exact component={Profile} />
-  <Route path="/LoginForm" exact component={LoginForm} />
-  <Route path="/SignUpForm" exact component={SignUpForm} />
-  <Route path="/Welcome" exact component={Welcome} />
-  <Route path="/Confirm" exact component={Confirm} />
+  <Route path="/dashboard" exact component={Dashboard} />
+  <Route path="/lessons" exact component={Lessons} />
+  <Route path="/practices" exact component={Practices} />
+  <Route path="/quizzes" exact component={Quizzes} />
+  <Route path="/awards" exact component={Awards} />
+  <Route path="/profile" exact component={Profile} />
+  <Route path="/login" exact component={LoginForm} />
+  <Route path="/signup" exact component={SignUpForm} />
+  <Route path="/welcome" exact component={Welcome} />
+  <Route path="/confirm" exact component={Confirm} />
   </Switch>
   </Suspense>
   </NetlifyIdentityContext> 
