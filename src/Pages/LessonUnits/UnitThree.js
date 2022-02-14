@@ -13,7 +13,7 @@ import {Link} from '@material-ui/core';
 const headerOne = {
  
 marginTop: '200px',
-marginLeft: '100px',  
+marginLeft: '50px',  
 }
 
 
@@ -42,10 +42,10 @@ marginTop: '50px'
 
 
 const lessonCard = {
-margin: '50px 100px', 
+margin: '50px', 
 backgroundColor: '#1B75BC', 
 padding: '50px', 
-width: '200px',  
+width: '150px', 
 textAlign: 'center',
   '&:hover': {
     boxShadow: '8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03)',
