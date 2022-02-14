@@ -135,7 +135,7 @@ const TopNavigation = () => {
 return (
 <>
 
-<Box sx={{ flexGrow: 1 }}>
+<Box sx={{ flexGrow: 2 }}>
       <AppBar position="fixed" sx={{backgroundColor: 'white', boxShadow: '3'}}>
         <Toolbar>
           <IconButton
@@ -148,7 +148,7 @@ return (
             <MenuIcon />
           </IconButton>
           <Link href="/">
-          <Typography sx={{ flexGrow: 2, color: "#1B75BC" }}>
+          <Typography sx={{ flexGrow: 3, color: "#1B75BC" }}>
           <ListItemIcon sx={{color: "#1B75BC"}}>
               <Avatar alt="FLC INC" src={smallflcincicon} />
               </ListItemIcon>

@@ -7,16 +7,31 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import {Link} from '@material-ui/core'; 
 
 
 const headerOne = {
-color: '#1B75BC', 
+ 
 marginTop: '200px',
 marginLeft: '100px',  
-fontSize: '36px'
 }
 
 
+const headerOneType = {
+  color: '#1B75BC', 
+  fontSize: '50px', 
+ 
+ 
+  }
+
+const lessonLink = {
+  color: 'white', 
+  textDecoration: 'none', 
+  '&:hover': {
+    decoration: 'none'
+  }, 
+ 
+}
 
 const allCards = {
 display: 'flex', 
@@ -29,10 +44,10 @@ marginTop: '50px'
 const lessonCard = {
 margin: '50px 100px', 
 backgroundColor: '#1B75BC', 
-color: 'white', 
 padding: '50px', 
 width: '200px',  
-textAlign: 'center'
+textAlign: 'center',
+
 
 }
 
@@ -42,122 +57,137 @@ const Lessons = () => {
     return (
      <>
     <Box sx={headerOne}>
-    <Typography>Unit 3 Lessons</Typography>
+    <Typography sx={headerOneType} variant="h4">Unit 3 Lessons</Typography>
     </Box>
      
     <Box sx={allCards}>
+
+  
     <Card sx={lessonCard}>
+    <Link sx={lessonLink} underline="none" >
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div" color="white">
+          Review 3.0
+        </Typography>
+       
+      </CardContent>
+      </Link>
+    </Card>
+   
+
+  
+    <Card sx={lessonCard}>
+    <Link sx={lessonLink} underline="none">
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div" color="white">
+          Lesson 3.1
+        </Typography>
+      </CardContent>
+      </Link>
+    </Card>
+   
+
+   
+    <Card sx={lessonCard}>
+    <Link sx={lessonLink} underline="none">
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div" color="white">
+       Lesson 3.2
+        </Typography>
+       
+      </CardContent>
+      </Link>
+    </Card>
     
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Review
-        </Typography>
-       
-      </CardContent>
-     
-    </Card>
-    <Card sx={lessonCard}>
+
     
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lesson 1
-        </Typography>
-      </CardContent>
-     
-    </Card>
     <Card sx={lessonCard}>
-     
+    <Link sx={lessonLink} underline="none">
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-       Lesson 2
+        <Typography gutterBottom variant="h5" component="div" color="white">
+        Lesson 3.3
         </Typography>
        
       </CardContent>
-     
+      </Link>
     </Card>
 
+
+   
     <Card sx={lessonCard}>
+    <Link sx={lessonLink} underline="none">
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div" color="white">
+        Lesson 3.4
+        </Typography>
+       
+       
+      </CardContent>
+      </Link>
+    </Card>
+
+   
+    <Card sx={lessonCard}>
+    <Link sx={lessonLink} underline="none">
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div" color="white">
+        Lesson 3.5
+        </Typography>
+       
+      </CardContent>
+      </Link>
+    </Card>
+   
+
+   
+    <Card sx={lessonCard}>
+    <Link sx={lessonLink} underline="none">
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div" color="white">
+        Lesson 3.6
+        </Typography>
+       
+      </CardContent>
+      </Link>
+    </Card>
+   
+   
+    <Card sx={lessonCard}>
+    <Link sx={lessonLink} underline="none">
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div" color="white">
+        Lesson 3.7
+        </Typography>
+       
+      </CardContent>
+      </Link>
+    </Card>
     
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        Lesson 3
-        </Typography>
-       
-      </CardContent>
-     
-    </Card>
 
     <Card sx={lessonCard}>
-    
+    <Link sx={lessonLink} underline="none">
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        Lesson 4
+        <Typography gutterBottom variant="h5" component="div" color="white">
+        Lesson 3.8
         </Typography>
        
-       
       </CardContent>
-     
+      </Link>
     </Card>
+   
 
+   
     <Card sx={lessonCard}>
-    
+    <Link sx={lessonLink} underline="none">
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        Lesson 5
+        <Typography gutterBottom variant="h5" component="div" color="white">
+        Lesson 3.9
         </Typography>
        
       </CardContent>
-     
+      </Link>
     </Card>
-
-
-    <Card sx={lessonCard}>
-    
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        Lesson 6
-        </Typography>
-       
-      </CardContent>
-     
-    </Card>
-
-
-    <Card sx={lessonCard}>
-     
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        Lesson 7
-        </Typography>
-       
-      </CardContent>
-     
-    </Card>
-
-
-    <Card sx={lessonCard}>
-     
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        Lesson 8
-        </Typography>
-       
-      </CardContent>
-     
-    </Card>
-
-
-    <Card sx={lessonCard}>
-      
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        Lesson 9
-        </Typography>
-       
-      </CardContent>
-     
-    </Card>
-
+   
 
  
 
