@@ -148,7 +148,7 @@ return (
         )}
          {!identity.user && (
         <ListItem>
-          <Link sx={{backgroundColor: 'white', color: "#1B75BC", clear: 'none' }}>
+          <Link sx={{backgroundColor: 'white', color: "#1B75BC", clear: 'none' }} href="/">
           <ListItemIcon sx={{float: 'left'}}>
               <Avatar alt="FLC INC" src={smallflcincicon} />
               </ListItemIcon>

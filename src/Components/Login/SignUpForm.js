@@ -29,6 +29,36 @@ const style = {
   }
 
 
+
+  const headerOne = {
+ 
+    marginTop: '100px',
+    textAlign: 'center' 
+    }
+    
+
+
+    const headerOneType = {
+      color: '#1B75BC', 
+      fontSize: '50px', 
+     
+     
+      }
+
+
+  
+      const headerOneType2 = {
+        color: '#1B75BC', 
+        fontSize: '50px', 
+        marginTop: '5px'
+       
+       
+        }
+
+
+
+
+
 const SignUpForm = (props) => {
 
 //const {closeHandler} = props
@@ -43,8 +73,12 @@ const handleClose = () => {
 }
 return (
 <>
-
-<Typography sx={typeStyle}>Sign Up Here</Typography>
+<Box sx={headerOne}>
+    <Typography sx={headerOneType} variant="h3">Welcome to</Typography>
+    <Typography sx={headerOneType2} variant="h4" paddingTop="20px">Math for Home</Typography>
+    <Typography sx={headerOneType2} variant="h5" paddingTop="20px" paddingBottom="100px">Would You Like to Sign Up?</Typography>
+    </Box>
+     
 
     <Box sx={style}>
     <Formik 
