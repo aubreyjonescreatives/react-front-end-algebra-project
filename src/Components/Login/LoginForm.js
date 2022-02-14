@@ -13,7 +13,7 @@ const style = {
     top: '50%', 
     left: '50%', 
     transform: 'translate(-50%, -50%)', 
-    width: 400, 
+    width: '25%', 
     bgcolor: 'background.paper', 
     border: '1px solid #ccc', 
     boxShadow: 6, 
@@ -25,7 +25,6 @@ const style = {
   const headerOne = {
  
     marginTop: '100px',
-    marginLeft: '50px', 
     textAlign: 'center' 
     }
     
