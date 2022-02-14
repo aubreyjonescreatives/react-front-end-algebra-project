@@ -2,9 +2,6 @@ import React, {Suspense } from 'react';
 import './App.css'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import NetlifyIdentityContext from 'react-netlify-identity-gotrue'; 
-
-
-
 import TopNavigation from './Components/TopNavigation'
 import Awards from './Pages/Awards'
 import Dashboard from './Pages/Dashboard'
@@ -12,7 +9,6 @@ import Landing from './Pages/Landing'
 import Lessons from './Pages/Lessons'
 import Practices from './Pages/Practices'
 import Quizzes from './Pages/Quizzes'
-import Profile from './Pages/Profile'
 import LoginForm from './Components/Login/LoginForm'; 
 import SignUpForm from './Components/Login/SignUpForm';
 import Welcome from './Components/Login/Welcome'; 
@@ -46,7 +42,6 @@ const App = () => {
   <Route path="/practices" exact component={Practices} />
   <Route path="/quizzes" exact component={Quizzes} />
   <Route path="/awards" exact component={Awards} />
-  <Route path="/profile" exact component={Profile} />
   <Route path="/login" exact component={LoginForm} />
   <Route path="/signup" exact component={SignUpForm} />
   <Route path="/welcome" exact component={Welcome} />
