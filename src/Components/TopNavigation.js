@@ -42,6 +42,9 @@ const TopNavigation = () => {
     const drawerItemList = () => (
         <Box sx={{width: 300, backgroundColor: 'white', boxShadow: 'none'}} role="presentation" className="drawerMenu">
           <List>
+
+          {identity.user && (
+
           <ListItem button>
               <ListItemIcon sx={{color: "#1B75BC"}}>
               <Avatar alt="FLC INC" src={smallflcincicon} />
@@ -49,7 +52,7 @@ const TopNavigation = () => {
               <Link href="/">FLC Inc's Algebra for Home</Link>
             </ListItem>
            
-          
+           )}
        
          {identity.user && (
             <ListItem button>
@@ -128,6 +131,8 @@ return (
 <Box sx={{ flexGrow: 3}}>
       <AppBar position="fixed" sx={{backgroundColor: 'white'}}>
         <Toolbar>
+
+        {identity.user && (
           <ListItem>
           <IconButton
             size="large"
@@ -140,20 +145,21 @@ return (
           </IconButton>
           </ListItem>
 
-          
-        {/* <ListItem  sx={{justifyContent: 'center'}}>
-          <Link href="/" sx={{backgroundColor: 'white', color: "#1B75BC" }}>
-          <ListItemIcon>
+        )}
+         {!identity.user && (
+        <ListItem>
+          <Link sx={{backgroundColor: 'white', color: "#1B75BC", clear: 'none' }}>
+          <ListItemIcon sx={{float: 'left'}}>
               <Avatar alt="FLC INC" src={smallflcincicon} />
               </ListItemIcon>
-          <Typography>
-            FLC Inc's Algebra for Home
+          <Typography sx={{float: 'left', marginTop: '50px'}}>
+            Math for Home
           </Typography>
           </Link>
-          </ListItem> */}
-      
+          </ListItem>
+         )}
           {!identity.user && (
-          <Link href="/signup" sx={{color: "#1B75BC"}}>Sign Up</Link>
+          <Link href="/signup" sx={{color: "#1B75BC", width: '20%'}}>Sign Up</Link>
           )}
             {!identity.user && (
             <Link href="/login" sx={{color: "#1B75BC"}}>Login</Link> 

@@ -4,9 +4,13 @@ import * as Yup from 'yup'
 import { useHistory } from 'react-router-dom'
 import { useIdentityContext } from 'react-netlify-identity-gotrue'
 
+import Typography from '@mui/material/Typography';
+
+
+
 const style = {
     position: 'absolute', 
-    top: '65%', 
+    top: '50%', 
     left: '50%', 
     transform: 'translate(-50%, -50%)', 
     width: 400, 
@@ -15,6 +19,36 @@ const style = {
     boxShadow: 6, 
     p: 4,
   }
+
+
+
+  const headerOne = {
+ 
+    marginTop: '100px',
+    marginLeft: '50px', 
+    textAlign: 'center' 
+    }
+    
+
+
+    const headerOneType = {
+      color: '#1B75BC', 
+      fontSize: '50px', 
+     
+     
+      }
+
+
+  
+      const headerOneType2 = {
+        color: '#1B75BC', 
+        fontSize: '50px', 
+        marginTop: '5px'
+       
+       
+        }
+
+
 
 
 const LoginForm = (props) => {
@@ -30,6 +64,19 @@ const handleClose = () => {
 
 }
 return (
+
+<>
+
+
+
+<Box sx={headerOne}>
+    <Typography sx={headerOneType} variant="h3">Welcome to</Typography>
+    <Typography sx={headerOneType2} variant="h4">Math for Home</Typography>
+   
+    </Box>
+     
+
+
 
     <Box sx={style}>
     <Formik 
@@ -133,9 +180,10 @@ return (
   </Box>
 
 
+
+  </>
+
 )
-
-
 
 
 }
