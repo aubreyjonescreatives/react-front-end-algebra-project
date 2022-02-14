@@ -32,7 +32,7 @@ const App = () => {
   return (
    <>
    <Router>
-  <NetlifyIdentityContext url='https://math-for-home.netlify.app/'>
+  <NetlifyIdentityContext url='https://math-for-home.netlify.app/'>   
    <TopNavigation />
    <Suspense>
    <Switch>
