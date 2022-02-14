@@ -90,6 +90,17 @@ const lessonCard2 = {
   
   
   }
+
+const awardbuttonStyles = {
+  color: '#1B75BC', 
+  backgroundColor: 'white', 
+  margin: "10px", 
+  '&:hover': {
+    backgroundColor: 'white', 
+    border: '1px solid #1B75BC', 
+    color: '#1B75BC'
+  },
+}
   
 
 const Dashboard = () => {
@@ -289,7 +300,7 @@ const Dashboard = () => {
               </ListItemIcon>
               Bronze Cup Award
             </ListItem>
-        <Button sx={{color: '#1B75BC', backgroundColor: 'white', margin: "10px"}}>Award Details</Button>
+        <Button sx={awardbuttonStyles}>Award Details</Button>
       </CardContent>
       </Link>
     </Card>
@@ -310,7 +321,7 @@ const Dashboard = () => {
               Gold Cup Award
               
             </ListItem>
-            <Button sx={{color: '#1B75BC', backgroundColor: 'white', margin: "10px"}}>Award Details</Button>
+            <Button sx={awardbuttonStyles}>Award Details</Button>
     
        
       </CardContent>
@@ -333,7 +344,7 @@ const Dashboard = () => {
               Silver Cup Award
               
             </ListItem>
-            <Button sx={{color: '#1B75BC', backgroundColor: 'white', margin: "10px"}}>Award Details</Button>
+            <Button sx={awardbuttonStyles}>Award Details</Button>
     
 
 
