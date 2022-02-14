@@ -47,6 +47,10 @@ backgroundColor: '#1B75BC',
 padding: '50px', 
 width: '200px',  
 textAlign: 'center',
+  '&:hover': {
+    boxShadow: '8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03)',
+    transform: 'translate3D(0,-1px,0) scale(1.03)'
+  }, 
 
 
 }

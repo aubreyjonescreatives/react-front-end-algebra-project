@@ -135,9 +135,12 @@ const TopNavigation = () => {
 return (
 <>
 
-<Box sx={{ flexGrow: 2 }}>
-      <AppBar position="fixed" sx={{backgroundColor: 'white', boxShadow: '3'}}>
+
+
+<Box sx={{ flexGrow: 3}}>
+      <AppBar position="fixed" sx={{backgroundColor: 'white'}}>
         <Toolbar>
+          <ListItem>
           <IconButton
             size="large"
             edge="start"
@@ -147,14 +150,20 @@ return (
           >
             <MenuIcon />
           </IconButton>
-          <Link href="/">
-          <Typography sx={{ flexGrow: 3, color: "#1B75BC" }}>
-          <ListItemIcon sx={{color: "#1B75BC"}}>
+          </ListItem>
+
+          
+        <ListItem  sx={{justifyContent: 'center'}}>
+          <Link href="/" sx={{backgroundColor: 'white', color: "#1B75BC" }}>
+          <ListItemIcon>
               <Avatar alt="FLC INC" src={smallflcincicon} />
               </ListItemIcon>
+          <Typography>
             FLC Inc's Algebra for Home
           </Typography>
           </Link>
+          </ListItem>
+      
           {!identity.user && (
           <Link href="/signup" sx={{color: "#1B75BC"}}>Sign Up</Link>
           )}
