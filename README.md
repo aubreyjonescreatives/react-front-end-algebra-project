@@ -2,10 +2,10 @@
 
 
 
-# I had a lot of fun designing a user interface for online Algebra learners. 
+## I had a lot of fun designing a user interface for online Algebra learners. 
 
 
-# If you would like to check out the website, I use Netlify to host this project. 
+## If you would like to check out the website, I use Netlify to host this project. 
 
 ## Here is the Netlify website link: 
 
