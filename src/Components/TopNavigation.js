@@ -147,7 +147,7 @@ return (
 
         )}
 
-        
+
          {!identity.user && (
         <ListItem>
           <Link sx={{backgroundColor: 'white', color: "#1B75BC", clear: 'none' }} href="/">
@@ -160,6 +160,7 @@ return (
           </Link>
           </ListItem>
          )}
+         
           {!identity.user && (
           <Link href="/signup" sx={{color: "#1B75BC", width: '20%'}}>Sign Up</Link>
           )}
