@@ -56,7 +56,7 @@ textAlign: 'center',
 }
 
 
-const Lessons = () => {
+const UnitFour = () => {
    
     return (
      <>
@@ -168,4 +168,4 @@ const Lessons = () => {
     );
   }
   
-  export default Lessons;
+  export default UnitFour;
