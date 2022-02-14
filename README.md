@@ -7,8 +7,6 @@
 
 ## If you would like to check out the website, I use Netlify to host this project. 
 
-## Here is the Netlify website link: 
-
 https://math-for-home.netlify.app/
 
 
