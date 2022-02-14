@@ -10,27 +10,47 @@ import Box from '@mui/material/Box';
 import {Link} from '@material-ui/core'; 
 
 
-
-
-const unitOne = {
-  padding: '150px 100px 20px 75px', 
-  fontSize: '50px', 
-  color: '#1B75BC'
-
+const headerOne = {
+ 
+marginTop: '200px',
+marginLeft: '50px',  
 }
 
+
+const headerOneType = {
+  color: '#1B75BC', 
+  fontSize: '50px', 
+ 
+ 
+  }
+
+const lessonLink = {
+  color: 'white', 
+  textDecoration: 'none', 
+  '&:hover': {
+    decoration: 'none'
+  }, 
+ 
+}
 
 const allCards = {
 display: 'flex', 
 flexWrap: 'wrap', 
-marginTop: '100px'
+marginTop: '50px'
 
 }
 
 
 const lessonCard = {
-width: '350px', 
-margin: '20px auto'
+margin: '50px', 
+backgroundColor: '#1B75BC', 
+padding: '50px', 
+width: '150px', 
+textAlign: 'center',
+  '&:hover': {
+    boxShadow: '8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03)',
+    transform: 'translate3D(0,-1px,0) scale(1.03)'
+  }, 
 
 
 }
@@ -40,207 +60,118 @@ const Lessons = () => {
    
     return (
      <>
-     <Typography sx={unitOne}>Unit 1 </Typography>
+    <Box sx={headerOne}>
+    <Typography sx={headerOneType} variant="h4">Unit 1 Lessons</Typography>
+    </Box>
+     
     <Box sx={allCards}>
+
   
-  <Link href='/unitonelessonzero' target="_blank">
     <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="Lesson 1.0"
-      />
+    <Link sx={lessonLink} underline="none" >
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h5" component="div" color="white">
           Lesson 1.0
         </Typography>
        
       </CardContent>
-     
+      </Link>
     </Card>
-    </Link>
+   
+
   
     <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
+    <Link sx={lessonLink} underline="none">
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h5" component="div" color="white">
           Lesson 1.1
         </Typography>
-       
       </CardContent>
-     
+      </Link>
     </Card>
+   
 
+   
     <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
+    <Link sx={lessonLink} underline="none">
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        Lesson 1.2
+        <Typography gutterBottom variant="h5" component="div" color="white">
+       Lesson 1.2
         </Typography>
        
       </CardContent>
-     
+      </Link>
     </Card>
+    
 
+    
     <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
+    <Link sx={lessonLink} underline="none">
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        Lesson 1.2
-        </Typography>
-       
-      </CardContent>
-     
-    </Card>
-
-    <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h5" component="div" color="white">
         Lesson 1.3
         </Typography>
        
       </CardContent>
-     
+      </Link>
     </Card>
 
 
+   
     <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
+    <Link sx={lessonLink} underline="none">
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h5" component="div" color="white">
         Lesson 1.4
         </Typography>
        
+       
       </CardContent>
-     
+      </Link>
     </Card>
 
-
+   
     <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
+    <Link sx={lessonLink} underline="none">
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h5" component="div" color="white">
         Lesson 1.5
         </Typography>
        
       </CardContent>
-     
+      </Link>
     </Card>
+   
 
-
+   
     <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
+    <Link sx={lessonLink} underline="none">
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h5" component="div" color="white">
         Lesson 1.6
         </Typography>
        
       </CardContent>
-     
+      </Link>
     </Card>
-
-
+   
+   
     <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
+    <Link sx={lessonLink} underline="none">
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h5" component="div" color="white">
         Lesson 1.7
         </Typography>
        
       </CardContent>
-     
+      </Link>
     </Card>
+    
 
+  
 
-    <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        Lesson 1.8
-        </Typography>
-       
-      </CardContent>
-     
-    </Card>
+ 
 
-    <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        Lesson 1.9
-        </Typography>
-       
-      </CardContent>
-     
-    </Card>
-
-    <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        Lesson 1.10
-        </Typography>
-       
-      </CardContent>
-     
-    </Card>
 
     </Box>
      </>
