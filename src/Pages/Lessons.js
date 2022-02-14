@@ -7,20 +7,27 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import {Link} from '@material-ui/core'
+import {Link} from '@material-ui/core'; 
 
+
+const algebraOne = {
+padding: '150px 100px 20px 75px', 
+fontSize: '50px', 
+color: '#1B75BC'
+}
 
 const allCards = {
 display: 'flex', 
 flexWrap: 'wrap', 
-margin: '50px'
+margin: '50px', 
+marginTop: '50px'
 
 }
 
 
 const lessonCard = {
 width: '350px', 
-margin: '20px auto'
+margin: '20px'
 
 
 }
@@ -30,6 +37,9 @@ const Lessons = () => {
    
     return (
      <>
+
+    <Typography sx={algebraOne}>Algebra 1</Typography>
+
     <Box sx={allCards}>
 
 

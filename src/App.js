@@ -29,6 +29,7 @@ import UnitNine from './Pages/LessonUnits/UnitNine.js';
 import UnitTen from './Pages/LessonUnits/UnitTen.js';
 import UnitEleven from './Pages/LessonUnits/UnitEleven.js';
 import UnitTwelve from './Pages/LessonUnits/UnitTwelve.js';
+import UnitOneLessonZero from './Pages/UnitOne/OneZero'; 
 
 
 const App = () => {
@@ -51,6 +52,7 @@ const App = () => {
   <Route path="/welcome" exact component={Welcome} />
   <Route path="/confirm" exact component={Confirm} />
   <Route path="/unitone" exact component={UnitOne} />
+  <Route path="/unitonelessonzero" exact component={UnitOneLessonZero} />
   <Route path="/unittwo" exact component={UnitTwo} />
   <Route path="/unitthree" exact component={UnitThree} />
   <Route path="/unitfour" exact component={UnitFour} />

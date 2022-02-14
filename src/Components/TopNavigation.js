@@ -40,7 +40,7 @@ const TopNavigation = () => {
 
 
     const drawerItemList = () => (
-        <Box sx={{width: 300, backgroundColor: 'white'}} role="presentation" className="drawerMenu">
+        <Box sx={{width: 300, backgroundColor: 'white', boxShadow: 'none'}} role="presentation" className="drawerMenu">
           <List>
           <ListItem button>
               <ListItemIcon sx={{color: "#1B75BC"}}>
@@ -136,7 +136,7 @@ return (
 <>
 
 <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{backgroundColor: 'white'}}>
+      <AppBar position="fixed" sx={{backgroundColor: 'white', boxShadow: '3'}}>
         <Toolbar>
           <IconButton
             size="large"

@@ -9,19 +9,30 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
 
+const headerOne = {
+color: '#1B75BC', 
+marginTop: '200px',
+marginLeft: '100px',  
+fontSize: '36px'
+}
+
+
 
 const allCards = {
 display: 'flex', 
 flexWrap: 'wrap', 
-
+marginTop: '50px'
 
 }
 
 
 const lessonCard = {
-width: '350px', 
-margin: '20px auto'
-
+margin: '50px 100px', 
+backgroundColor: '#1B75BC', 
+color: 'white', 
+padding: '50px', 
+width: '200px',  
+textAlign: 'center'
 
 }
 
@@ -30,48 +41,35 @@ const Lessons = () => {
    
     return (
      <>
+    <Box sx={headerOne}>
+    <Typography>Unit 3 Lessons</Typography>
+    </Box>
+     
     <Box sx={allCards}>
     <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
+    
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Unit 1
+          Review
         </Typography>
        
       </CardContent>
      
     </Card>
     <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
+    
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Unit 2
+          Lesson 1
         </Typography>
-       
       </CardContent>
      
     </Card>
-
     <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
+     
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Unit 3
+       Lesson 2
         </Typography>
        
       </CardContent>
@@ -79,15 +77,10 @@ const Lessons = () => {
     </Card>
 
     <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
+    
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Unit 4
+        Lesson 3
         </Typography>
        
       </CardContent>
@@ -95,15 +88,22 @@ const Lessons = () => {
     </Card>
 
     <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
+    
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Unit 5
+        Lesson 4
+        </Typography>
+       
+       
+      </CardContent>
+     
+    </Card>
+
+    <Card sx={lessonCard}>
+    
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        Lesson 5
         </Typography>
        
       </CardContent>
@@ -112,15 +112,10 @@ const Lessons = () => {
 
 
     <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
+    
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Unit 6
+        Lesson 6
         </Typography>
        
       </CardContent>
@@ -129,15 +124,10 @@ const Lessons = () => {
 
 
     <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
+     
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Unit 7
+        Lesson 7
         </Typography>
        
       </CardContent>
@@ -146,15 +136,10 @@ const Lessons = () => {
 
 
     <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
+     
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Unit 8
+        Lesson 8
         </Typography>
        
       </CardContent>
@@ -163,15 +148,10 @@ const Lessons = () => {
 
 
     <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
+      
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Unit 9
+        Lesson 9
         </Typography>
        
       </CardContent>
@@ -179,53 +159,8 @@ const Lessons = () => {
     </Card>
 
 
-    <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Unit 10
-        </Typography>
-       
-      </CardContent>
-     
-    </Card>
+ 
 
-    <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Unit 11
-        </Typography>
-       
-      </CardContent>
-     
-    </Card>
-
-    <Card sx={lessonCard}>
-      <CardMedia
-        component="img"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Unit 12
-        </Typography>
-       
-      </CardContent>
-     
-    </Card>
 
     </Box>
      </>
