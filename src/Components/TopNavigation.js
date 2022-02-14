@@ -153,7 +153,7 @@ return (
           </ListItem>
 
           
-        <ListItem  sx={{justifyContent: 'center'}}>
+        {/* <ListItem  sx={{justifyContent: 'center'}}>
           <Link href="/" sx={{backgroundColor: 'white', color: "#1B75BC" }}>
           <ListItemIcon>
               <Avatar alt="FLC INC" src={smallflcincicon} />
@@ -162,7 +162,7 @@ return (
             FLC Inc's Algebra for Home
           </Typography>
           </Link>
-          </ListItem>
+          </ListItem> */}
       
           {!identity.user && (
           <Link href="/signup" sx={{color: "#1B75BC"}}>Sign Up</Link>
