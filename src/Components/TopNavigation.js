@@ -99,19 +99,7 @@ const TopNavigation = () => {
               <Link href="/awards">Awards</Link>
             </ListItem>
 )}
-{identity.user && (
 
-
-
-            <ListItem button>
-                 <ListItemIcon>
-      <Avatar sx={{width: 30, height: 30, backgroundColor: '#1B75BC', color: "white"}}>{identity.user?.user_metadata?.full_name.slice(0, 1)}</Avatar>
-        </ListItemIcon>
-              <Link href="/profile" >{identity.user?.user_metadata?.full_name}'s Profile</Link>
-            </ListItem>
-       
-
-       )}
        {identity.user && (
        
            <ListItem button onClick={identity.logout} >
@@ -173,13 +161,12 @@ return (
           
          
           {identity.user && (
-      <ListItem sx={{justifyContent: 'flex-end'}} button >
-        <Typography>
-        <Link href='/profile'>
+      <ListItem sx={{justifyContent: 'flex-end'}} >
+        <Typography sx={{color: '#1B75BC'}}>
         <ListItemIcon>
       <Avatar sx={{width: 30, height: 30, backgroundColor: '#1B75BC', color: "white"}}>{identity.user?.user_metadata?.full_name.slice(0, 1)}</Avatar>
         </ListItemIcon>
-          Hi, {identity.user?.user_metadata?.full_name}</Link>
+          Hi, {identity.user?.user_metadata?.full_name}
         </Typography>
       </ListItem>
       )}
