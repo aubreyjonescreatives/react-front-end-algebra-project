@@ -1,6 +1,7 @@
 
 import * as React from 'react'; 
 import kidLearning from '../assets/images/kidlearning.png'
+import learnanywhere from '../assets/images/learnanywhere.png'
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -11,8 +12,25 @@ import Box from '@mui/material/Box';
 import {Link} from '@material-ui/core'; 
 
 
+const landingIntro = {
+  marginTop: '100px', 
+  color: '#1B75BC'
+}
+
+const landingIntroType = {
+textAlign: 'center'
+
+}
+
+const landingIntroType2 = {
+  textAlign: 'center',
+  marginTop: '40px'
+  
+}
+
+
 const landing = {
-  marginTop: '200px',
+  marginTop: '150px',
   display: 'flex'
 }
 
@@ -38,29 +56,60 @@ const landing2 = {
   padding: '20px'
 }
 
-const landingType = {
- paddingTop: '10px', 
- paddingBottom: '15px'
-}
-
-const landingType2 = {
-  paddingTop: '5px', 
-  paddingBottom: '75px'
- }
- 
 
 
 const landingType3 = {
-  padding: '5px'
- }
+  textAlign: 'center', 
+ paddingTop: '100px', 
+ paddingLeft: '30px'
+}
+
+
+const landingType4 = {
+  textAlign: 'center', 
+ paddingLeft: '30px'
+}
 
 
 
  const landingA = {
   marginTop: '200px',
-  display: 'flex'
+  display: 'flex', 
+  borderTop: '1px solid #1B75BC',
+  borderBottom: '1px solid #1B75BC'
 }
 
+
+
+
+const landingTypeA = {
+  paddingTop: '75px', 
+  paddingBottom: '15px', 
+ }
+ 
+ const landingTypeA2 = {
+   paddingTop: '5px', 
+   paddingBottom: '15px'
+  }
+  
+ 
+ 
+ const landingTypeA3 = {
+   padding: '5px'
+  }
+ 
+ 
+ 
+const landing1A = {
+  width: '50%',
+  margin: '40px', 
+  
+}
+
+
+const landingHeroA = {
+width: '100%'
+}
 
 
 
@@ -70,7 +119,24 @@ const Landing = () => {
    
     return (
      <>
+
+<Box sx={landingIntro}>
+
+
+<Typography variant="h3" sx={landingIntroType}>
+      Welcome to
+
+      </Typography>
+      <Typography variant="h3" sx={landingIntroType2}>
+      Math for Home
+
+      </Typography>
+</Box>
+
+
   <Box sx={landing}>
+
+
   <Box sx={landing1}>
     <Card sx={landingHero}>
     <CardMedia
@@ -82,22 +148,16 @@ const Landing = () => {
     </Box>
 
     <Box  sx={landing2}>
-      <Typography variant="h3" sx={landingType}>
-      Welcome to
+
+      <Typography variant="h4" sx={landingType3}>
+      We value all different learning styles
 
       </Typography>
-      <Typography variant="h4" sx={landingType2}>
-      Math for Home
-
+      
+      <Typography variant="h4" sx={landingType4}>
+      and create a fun online learning environment for everyone. 
       </Typography>
-
-      <Typography variant="h5" sx={landingType3}>
-      Where we value all different learning styles
-
-      </Typography>
-      <Typography variant="h5" sx={landingType3}>
-      and create a fun learning environment. 
-      </Typography>
+     
       </Box>
       </Box>
 
@@ -105,8 +165,27 @@ const Landing = () => {
 
 
 
+    <Box  sx={landing2}>
+      <Typography variant="h4" sx={landingTypeA}>
+     Our program is available
 
+      </Typography>
+      <Typography variant="h4" sx={landingTypeA2}>
+      anywhere and anytime.
 
+      </Typography>
+
+      </Box>
+
+      <Box sx={landing1A}>
+    <Card sx={landingHeroA}>
+    <CardMedia
+        component="img"
+        image={learnanywhere}
+        alt="learn anywhere"
+      />
+    </Card>
+    </Box>
 
 
 
