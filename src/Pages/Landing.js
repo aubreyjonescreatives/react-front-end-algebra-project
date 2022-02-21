@@ -24,13 +24,13 @@ textAlign: 'center'
 
 const landingIntroType2 = {
   textAlign: 'center',
-  marginTop: '40px'
+  marginTop: '50px'
   
 }
 
 
 const landing = {
-  marginTop: '150px',
+  marginTop: '100px',
   display: 'flex'
 }
 
@@ -73,7 +73,7 @@ const landingType4 = {
 
 
  const landingA = {
-  marginTop: '200px',
+  marginTop: '150px',
   display: 'flex', 
   borderTop: '1px solid #1B75BC',
   borderBottom: '1px solid #1B75BC'
@@ -83,7 +83,7 @@ const landingType4 = {
 
 
 const landingTypeA = {
-  paddingTop: '75px', 
+  paddingTop: '250px', 
   paddingBottom: '15px', 
  }
  
@@ -108,7 +108,8 @@ const landing1A = {
 
 
 const landingHeroA = {
-width: '100%'
+width: '100%', 
+marginTop: '100px'
 }
 
 
@@ -124,9 +125,10 @@ const Landing = () => {
 
 
 <Typography variant="h3" sx={landingIntroType}>
-      Welcome to
+      Welcome to FLC Inc's 
 
       </Typography>
+    
       <Typography variant="h3" sx={landingIntroType2}>
       Math for Home
 

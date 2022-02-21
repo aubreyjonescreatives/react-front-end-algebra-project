@@ -128,7 +128,7 @@ return (
 
 
 
-<Box sx={{ flexGrow: 3}}>
+<Box>
       <AppBar position="fixed" sx={{backgroundColor: 'white'}}>
         <Toolbar>
 
@@ -154,15 +154,16 @@ return (
           <ListItemIcon sx={{float: 'left'}}>
               <Avatar alt="FLC INC" src={smallflcincicon} />
               </ListItemIcon>
-          <Typography sx={{float: 'left', marginTop: '50px'}}>
-            Math for Home
+              <Typography sx={{ float: 'left', marginTop: '50px', textAlign: 'center'}}>
+           FLC Inc's <br />Math for Home
           </Typography>
+        
           </Link>
           </ListItem>
          )}
          
           {!identity.user && (
-          <Link href="/signup" sx={{color: "#1B75BC", width: '20%'}}>Sign Up</Link>
+          <Link href="/signup" sx={{ backgroundColor: '#1B75BC', color: "#1B75BC", textAlign: 'center'}}>Sign Up</Link>
           )}
             {!identity.user && (
             <Link href="/login" sx={{color: "#1B75BC"}}>Login</Link> 
